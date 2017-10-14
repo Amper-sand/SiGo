@@ -1,0 +1,66 @@
+/*div{
+	border: solid;
+	padding: 20px;
+}*/
+
+.demo-card-square.mdl-card {
+  width: 340px;
+  height: 340px;
+  margin: 20px auto;
+
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:url('../images/test-image.jpg') center / cover;
+
+}
+
+.options{
+	margin: 30px;
+
+}
+
+.demo-card-square{
+
+}
+
+.hero-image{
+	  background:url('../images/hero-image-01.png') center 35% no-repeat #46B6AC;
+	  height: 100vh;
+
+}
+
+.mdl-button {
+	margin-left: 0px;
+
+}
+
+.title-text{
+	margin-top: 30%;
+	color: white;
+}
+
+h1{
+	margin-bottom: 2px;
+}
+
+.quote{
+	background:url('../images/quote-image-02.png') no-repeat;
+	height: 50vh;
+
+}
+
+#quote-text {
+	color: white;
+	text-align: center;
+	margin-top: 10%;
+}
+
+#full-options-container{
+	height: 900px;
+	margin: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
