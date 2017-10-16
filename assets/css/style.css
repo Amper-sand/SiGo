@@ -3,6 +3,8 @@
 	padding: 20px;
 }*/
 
+
+
 .demo-card-square.mdl-card {
   width: 340px;
   height: 340px;
@@ -20,13 +22,17 @@
 
 }
 
+
 .demo-card-square{
 
 }
 
 .hero-image{
-	  background:url('../images/hero-image-01.png') center 35% no-repeat #46B6AC;
+	  background:url('../images/hero-image-no-text-01.png') center 35% no-repeat;
 	  height: 100vh;
+
+
+
 
 }
 
@@ -35,8 +41,16 @@
 
 }
 
+.main-button{
+	margin-left: 0px;
+	margin-top: 20px;
+	width: 600px;
+	height: 60px;
+	font-size: 20px;
+}
+
 .title-text{
-	margin-top: 30%;
+	margin-top: 25%;
 	color: white;
 }
 
@@ -45,7 +59,7 @@ h1{
 }
 
 .quote{
-	background:url('../images/quote-image-02.png') no-repeat;
+	background:url('../images/quote-image-02-02.png') no-repeat;
 	height: 50vh;
 
 }
@@ -57,10 +71,119 @@ h1{
 }
 
 #full-options-container{
-	height: 900px;
+	height: 960px;
 	margin: auto;
 }
 
-.img-circle {
-    border-radius: 100%;
+.bio-pics{
+	padding: 0;
+	width: 300px;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
 }
+
+
+.container {
+  position: relative;
+  width: 300px;
+  height: auto;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+/*Jessica Bio */
+#overlayJessica {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background:url('../images/jessica2pic.png') no-repeat;
+}
+
+.container:hover #overlayJessica {
+  opacity: 1;
+}
+
+/*Gary Bio*/
+#overlayGary {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background:url('../images/gary2.png') no-repeat;
+}
+
+.container:hover #overlayGary {
+  opacity: 1;
+}
+
+/*Nick Bio*/
+#overlayNick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background:url('../images/nick2.png') no-repeat;
+}
+
+.container:hover #overlayNick {
+  opacity: 1;
+}
+
+/*Spencer Bio*/
+#overlaySpencer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background:url('../images/spencer2.png') no-repeat;
+}
+
+.container:hover #overlaySpencer {
+  opacity: 1;
+}
+
+.mdl-card__supporting-text{
+	font-size: 20px;
+	line-height: 24px;
+}
+
+#about-text{
+font-size: 18px;
+line-height: 30px;
+font-weight: lighter;
+}
+
+/*.bio-pic-container{
+	width: 300px;
+	height: 300px
+	margin: 0;
+	position: 
+
+}*/
