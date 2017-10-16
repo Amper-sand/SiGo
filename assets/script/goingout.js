@@ -1,42 +1,56 @@
 $(document).ready(function(){
 	$("#mainbutton").on("click", function() {
-		var event = $(this).attr("start");
+		var event = $(this).data("start");
 		var apiKey = '2e0WdiEAg5d21OL38Fu6vbNxarEl2QuA'
 		var queryURL = "https://data.cityofchicago.org/resource/qa7g-ckqp.json";
 
-		$.ajax({
-		    url: "https://data.cityofchicago.org/resource/qa7g-ckqp.json",
-		    type: "GET",
-		    data: {
-		      "$limit" : 25,
-		      "$$app_token" : "5N0gX8aLa3lAUZiLtStOhkR3I",
-		    }
-		}).done(function(data) {
-			console.log(data);
-		for (i = 0; i < data.length; i++){
-			console.log(data[i].doing_business_as_name);
-			console.log(data[i].address);
-		}
-		});
-	});
+			$.ajax({
+			    url: "https://data.cityofchicago.org/resource/qa7g-ckqp.json",
+			    type: "GET",
+			    data: {
+			      "$limit" : 50,
+			      "$$app_token" : "5N0gX8aLa3lAUZiLtStOhkR3I",
+			    	}
+			}).done(function(data) {
+				for (i = 0; i < data.length; i++){
+				console.log(data[i].doing_business_as_name);
+				console.log(data[i].address);
+
+				//variables for each restaurant Div section
+			    var restaurantsdiv1 = $("<div>");
+			    var restaurantsdiv2 = $("<div>");
+			    var restaurantsdiv3 = $("<div>");
+			    var restaurantsdiv4 = $("<div>");
+
+			    //functions to place restaurant information in their respective div
+			    restaurantsdiv1.html(data[5].doing_business_as_name);
+			    $("#restaurantsdiv1").html(restaurantsdiv1);
+			    restaurantsdiv2.html(data[6].doing_business_as_name);
+			    $("#restaurantsdiv2").html(restaurantsdiv2);
+			    restaurantsdiv3.html(data[4].doing_business_as_name);
+			    $("#restaurantsdiv3").html(restaurantsdiv3);
+			    restaurantsdiv4.html(data[10].doing_business_as_name);
+			    $("#restaurantsdiv4").html(restaurantsdiv4);
+
+}
+});
+});
 });
 
-	 $('#mainbutton').on('click', function() {
+// Nick's javascript
+$('#mainbutton').on('click', function() {
+		var recipe = $(this).data('name');
+		var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/random?limitLicense=false&number=4&tags=";
 
-    var recipe = $(this).data('name');
+		$.ajax({
+			url: queryURL,
+			headers: { 'X-Mashape-Key': 'QjnzWlmOacmshwsPibENUtYYmB3Zp1X16Xmjsn1sIUIJeoo2Gx' },
+			method: 'GET'
 
-    var queryURL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/random?limitLicense=false&number=4&tags=";
-    $.ajax({
-        url: queryURL,
-        headers: { 'X-Mashape-Key': 'QjnzWlmOacmshwsPibENUtYYmB3Zp1X16Xmjsn1sIUIJeoo2Gx' },
-        method: 'GET'
-    })
-        .done(function(response) {
-            displayRecipes(response.recipes)
-
-            
-        });
-    });
+		}).done(function(response) {
+    		displayRecipes(response.recipes) 
+	});
+});
 
 
 function displayRecipes(recipes){
