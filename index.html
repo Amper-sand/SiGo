@@ -12,11 +12,12 @@
 	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 	  crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 <!-- test -->
 
 </head>
 <body>
-
 
 <div class="mdl-grid hero-image">
   <div class="mdl-cell mdl-cell--7-col">
@@ -24,10 +25,10 @@
   </div>
 
   <div class="mdl-cell mdl-cell--5-col title-text">
-  	<h1>STAY IN OR GO OUT?</h1>
-  	<p>A service app that provides entertainment options for staying in or going out. Sigo reduces the anxiety of how to spend time at home and lessen the ever scary FOMO (Fear of Missing Out). Additionally, the service provides a centralized hub for planning an evening for yourself or a group.<br>
+  	<h1>HAVE FOMO, TRY SIGO</h1>
+  	<p id="about-text">A service app that provides entertainment options for staying in or going out.<br> Sigo reduces the anxiety of how to spend time at home and lessen the ever scary<br> FOMO (Fear of Missing Out). Additionally, the service provides a centralized <br>hub for planning an evening for yourself or a group.<br>
   	<!-- Accent-colored raised button with ripple -->
-	<input type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="mainbutton" value="GO OR STAY" onclick="scroll_to_div('full-options-container')"> 
+	<input type="button" class="mdl-button main-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="mainbutton" value="GO OR STAY" onclick="scroll_to_div('full-options-container')"> 
   </div>
 </div>
 
@@ -38,7 +39,7 @@
 		<!-- This is card #1 for Stay -->
 		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
 
-			<div class="mdl-card__title mdl-card--expand" >
+			<div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text">Stay</h2>
 			</div>
 			<div class="mdl-card__supporting-text" id="recipediv1">
@@ -84,10 +85,10 @@
 	<div class="mdl-grid options">
 		<!-- This is card #1 for Go -->
 		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand">
+			<div class="mdl-card__title mdl-card--expand" id="firstPic">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
-			<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+			<div class="mdl-card__supporting-text" id="restaurantsdiv1">
 			</div>
 			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
 			</div>
@@ -98,7 +99,7 @@
 			<div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
-			<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+			<div class="mdl-card__supporting-text" id="restaurantsdiv2">
 			</div>
 			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
 			</div>
@@ -109,7 +110,7 @@
 			<div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
-			<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+			<div class="mdl-card__supporting-text" id="restaurantsdiv3">
 			</div>
 			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
 			</div>
@@ -120,7 +121,7 @@
 			<div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
-			<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+			<div class="mdl-card__supporting-text" id="restaurantsdiv4">
 			</div>
 			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
 			</div>
@@ -131,19 +132,45 @@
 <!-- This is the separating quote -->
 <div class="mdl-grid quote">
   <div class="mdl-cell mdl-cell--12-col">
-  <h2 id="quote-text"> this is some smart quote about our <br>wonderful app</h2>
+  <h2 id="quote-text">cooking in pjs or drinking with friends</h2>
   </div>
 </div>
 
 
 <!-- This is for our Team bio and pic -->
-<div class="mdl-grid the team">
-  <div class="mdl-cell mdl-cell--3-col">goes</div>
-  <div class="mdl-cell mdl-cell--3-col">here</div>
-  <div class="mdl-cell mdl-cell--3-col">here</div>
-  <div class="mdl-cell mdl-cell--3-col">here</div>
+<div class="mdl-grid full-options-container">
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">
+	<div class="container">
+	  <img src="assets/images/Jessica.png" class="image">
+	  <div id="overlayJessica"></div>
+	</div>
+  </div>	
 
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
+	<div class="container">
+	  <img src="assets/images/gary.png" class="image">
+	  <div id="overlayGary"></div>
+	</div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
+	<div class="container">
+	  <img src="assets/images/nick.png" class="image">
+	  <div id="overlayNick"></div>
+	</div>
+  </div>	
+
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
+	<div class="container">
+	  <img src="assets/images/spencer.png" class="image">
+	  <div id="overlaySpencer"></div>
+	</div>
+  </div>
 </div>
+
+
+
+
 
 <script type="text/javascript" src="assets/script/goingout.js"></script>
 
