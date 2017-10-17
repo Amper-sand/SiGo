@@ -12,7 +12,7 @@
 	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 	  crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 <!-- test -->
 
@@ -25,7 +25,8 @@
   </div>
 
   <div class="mdl-cell mdl-cell--5-col title-text">
-  	<h1>HAVE FOMO, TRY SIGO</h1>
+  	<h1 class="animated fadeInLeft">HAVE FOMO?</h1>
+  	<h2 class="animated fadeInRight">TRY SiGo</h2>
   	<p id="about-text">A service app that provides entertainment options for staying in or going out. Sigo reduces the anxiety of how to spend time at home and lessen the ever scary FOMO (Fear of Missing Out). Additionally, the service provides a centralized hub for planning an evening for yourself or a group.<br>
   	<!-- Accent-colored raised button with ripple -->
 	<input type="button" class="mdl-button main-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="mainbutton" value="GO OR STAY" onclick="scroll_to_div('full-options-container')"> 
@@ -90,7 +91,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv1">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Website</a>
 			</div>
 		</div>
 
@@ -101,7 +102,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv2">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink2" target="_blank">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink2" target="_blank">Website</a>
 			</div>
 		</div>
 
@@ -112,7 +113,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv3">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink3" target="_blank" >View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink3" target="_blank" >Website</a>
 			</div>
 		</div>
 
@@ -123,7 +124,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv4">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink4" target="_blank">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink4" target="_blank">Website</a>
 			</div>
 		</div>
 	</div>
@@ -212,7 +213,9 @@
       // **** .ref() refers to the path you want to save your data to
       // **** Since we left .ref() blank, it will save to the root directory
       database.ref().set({
-        clickCount: clickCounter,
+        clickCount: clickCounter
+    });
+  });
 </script>
 </body>
 </html>

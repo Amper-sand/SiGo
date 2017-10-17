@@ -3,196 +3,166 @@
   padding: 20px;
 }*/
 
-
-
 .demo-card-square.mdl-card {
-  width: 340px;
-  height: 340px;
-  margin: 20px auto;
-
+    width: 320px;
+    height: 340px;
+    margin: 20px auto;
 }
+
+#img1{
+	padding-top: 10px;
+}
+
 .demo-card-square > .mdl-card__title {
-  color: #fff;
-  background:url('../images/test-image.jpg') center / cover;
-
+    color: #fff;
+    background: url('../images/test-image.jpg') center / cover;
 }
-
-.options{
-  margin: 30px;
-
+.options {
+    margin: 30px;
 }
-
-
-.demo-card-square{
-
-}
-
-.hero-image{
-    background:url('../images/hero-image-01.png') center 35% no-repeat;
+.demo-card-square {} .hero-image {
+    background: url('../images/hero-image-01.png') center 35% no-repeat;
     height: 100vh;
-
-
-
-
 }
-
 .mdl-button {
-  margin-left: 0px;
-
+    margin-left: 0px;
 }
-
-.main-button{
-  margin: auto;
- /* margin-left: 0px;
+.main-button {
+    margin: auto;
+    /* margin-left: 0px;
   margin-top: 20px;
   width: 200px;
   height: 60px;
   font-size: 20px;*/
 }
-
-.title-text{
-  margin-top: 25%;
-  color: white;
+.title-text {
+    margin-top: 25%;
+    color: white;
 }
-
-h1{
-  margin-bottom: 2px;
+h1,
+h2 {
+    margin-bottom: 2px;
 }
-
-.quote{
-  background:url('../images/quote-image-02.png') no-repeat;
-  height: 50vh;
-
+.quote {
+    background: url('../images/quote-image-02.png') no-repeat;
+    height: 50vh;
 }
-
 #quote-text {
-  color: white;
-  text-align: center;
-  margin-top: 10%;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
 }
-
-#full-options-container{
-  margin: auto;
+#full-options-container {
+    margin: auto;
 }
-
-.bio-pics{
-  padding: 0;
-  width: 300px;
-  height: auto;
-  margin: auto;
-  margin-top: 20px;
-  position: relative;
+.bio-pics {
+    padding: 0;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
 }
-
-
 .container {
-  position: relative;
-  width: 300px;
-  height: auto;
+    position: relative;
+    width: 300px;
+    height: auto;
 }
-
 .image {
-  display: block;
-  width: 300px;
-  height: auto;
+    display: block;
+    width: 300px;
+    height: auto;
 }
-
 /*Jessica Bio */
+
 #overlayJessica {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background:url('../images/jessica2pic.png') no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background: url('../images/jessica2pic.png') no-repeat;
 }
-
 .container:hover #overlayJessica {
-  opacity: 1;
+    opacity: 1;
 }
-
 /*Gary Bio*/
+
 #overlayGary {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background:url('../images/gary2.png') no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background: url('../images/gary2.png') no-repeat;
 }
-
 .container:hover #overlayGary {
-  opacity: 1;
+    opacity: 1;
+    background-size: cover;
 }
-
 /*Nick Bio*/
+
 #overlayNick {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background:url('../images/nick2.png') no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background: url('../images/nick2.png') no-repeat;
 }
-
 .container:hover #overlayNick {
-  opacity: 1;
+    opacity: 1;
 }
-
 /*Spencer Bio*/
+
 #overlaySpencer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background:url('../images/spencer2.png') no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background: url('../images/spencer2.png') no-repeat;
 }
-
 .container:hover #overlaySpencer {
-  opacity: 1;
+    opacity: 1;
+    background-position: top;
+}
+.mdl-card__supporting-text {
+    font-size: 20px;
+    line-height: 24px;
+}
+#about-text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+.bio-pic-container {
+    margin: auto;
+}
+div.container {
+    margin: 0px;
+}
+#team-pics .container {
+    padding: 0px 30px;
+}
+#team-pics .container2 {
+    margin-left: 30px;
 }
 
-.mdl-card__supporting-text{
-  font-size: 20px;
-  line-height: 24px;
-}
 
-#about-text{
-font-size: 18px;
-line-height: 30px;
-font-weight: lighter;
-}
-
-.bio-pic-container{
-  margin: auto;
-
-}
-
-div.container{
-  margin: 0px;
-}
-
-#team-pics .container{
-padding: 0px 30px;
-}
-
-#team-pics .container2{
-margin-left: 30px;
-}

@@ -42,10 +42,10 @@ $(document).ready(function() {
             $("#golink4").attr("href",data.restaurants[10].restaurant.url)
         });
 
-        $("#firstPic").css("background", "#fff8d3");
-        $("#secondPic").css("background", "#fff8d3");
-        $("#thirdPic").css("background", "#fff8d3");
-        $("#fourthPic").css("background", "#fff8d3");
+        $("#firstPic").css("background", "white");
+        $("#secondPic").css("background", "white");
+        $("#thirdPic").css("background", "white");
+        $("#fourthPic").css("background", "white");
     });
 
 
@@ -65,14 +65,14 @@ $(document).ready(function() {
             displayRecipes(response.recipes);
             displayImages(response.recipes);
             giveUrl(response.recipes);
-            $("#img1").css("background","#fff8d3");
-            $("#img2").css("background","#fff8d3");
-            $("#img3").css("background","#fff8d3");
-            $("#img4").css("background","#fff8d3");
-            
+            $("#img1").css("background", "white");
+            $("#img2").css("background","white");
+            $("#img3").css("background","white");
+            $("#img4").css("background","white");
         });
     });
 
+//function to display recipie title
 function displayRecipes(recipes){
     console.log(recipes);
     var recipediv1 = $("<div>") 
@@ -88,7 +88,7 @@ function displayRecipes(recipes){
     recipediv4.html(recipes[3].title)
     $("#recipediv4").html(recipediv4)
   }
-
+//function to display recipie title 
 function displayImages(recipes){
     $("#img1").html("<img src='" + recipes[0].image + "' alt='recipeimage' style='height:220px; width:370px'>")
     $("#img2").html("<img src='" + recipes[1].image + "' alt='recipeimage' style='height:220px; width:370px'>")
@@ -102,7 +102,5 @@ function displayImages(recipes){
     $("#link3").attr("href",recipes[2].spoonacularSourceUrl)
     $("#link4").attr("href",recipes[3].spoonacularSourceUrl)
  }
-
-
 
 });
