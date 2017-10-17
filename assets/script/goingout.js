@@ -12,7 +12,7 @@ $(document).ready(function() {
 
             //variables for each restaurant Div section
             var restaurantsdiv1 = $("<div>");
-            var restaurantsdiv2 = $("<div>");
+            var restaurantsdiv2 = $("<div>");  
             var restaurantsdiv3 = $("<div>");
             var restaurantsdiv4 = $("<div>");
 
