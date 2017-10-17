@@ -35,6 +35,11 @@ $(document).ready(function() {
             $("#secondPic").html("<img src='" + data.restaurants[6].restaurant.featured_image + "' alt='restaurantimage' style='height:220px; width:370px'>");
             $("#thirdPic").html("<img src='" + data.restaurants[3].restaurant.featured_image + "' alt='restaurantimage' style='height:220px; width:370px'>");
             $("#fourthPic").html("<img src='" + data.restaurants[10].restaurant.featured_image + "' alt='restaurantimage' style='height:220px; width:370px'>");
+
+            $("#golink1").attr("href",data.restaurants[5].restaurant.url)
+            $("#golink2").attr("href",data.restaurants[6].restaurant.url)
+            $("#golink3").attr("href",data.restaurants[3].restaurant.url)
+            $("#golink4").attr("href",data.restaurants[10].restaurant.url)
         });
 
         $("#firstPic").css("background", "#fff8d3");
