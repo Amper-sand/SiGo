@@ -90,7 +90,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv1">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">View Updates</a>
 			</div>
 		</div>
 
@@ -101,7 +101,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv2">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink2" target="_blank">View Updates</a>
 			</div>
 		</div>
 
@@ -112,7 +112,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv3">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink3" target="_blank" >View Updates</a>
 			</div>
 		</div>
 
@@ -123,7 +123,7 @@
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv4">
 			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">View Updates</a>
+			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink4" target="_blank">View Updates</a>
 			</div>
 		</div>
 	</div>
@@ -138,38 +138,35 @@
 
 
 <!-- This is for our Team bio and pic -->
-<div class="full-options-container" id="team-pics">
-	<div class="mdl-grid options">	
-	  <div class="mdl-cell mdl-cell--3-col bio-pic-container">
-		<div class="container">
-		  <img src="assets/images/Jessica.png" class="image">
-		  <div class="container2" id="overlayJessica"></div>
-		</div>
-	  </div>	
-
-	  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
-		<div class="container">
-		  <img src="assets/images/gary.png" class="image">
-		  <div class="container2" id="overlayGary"></div>
-		</div>
-	  </div>
-
-	  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
-		<div class="container">
-		  <img src="assets/images/nick.png" class="image">
-		  <div class="container2" id="overlayNick"></div>
-		</div>
-	  </div>	
-
-	  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
-		<div class="container">
-		  <img src="assets/images/spencer.png" class="image">
-		  <div class="container2" id="overlaySpencer"></div>
-		</div>
-	  </div>
+<div class="mdl-grid full-options-container">
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">
+	<div class="container">
+	  <img src="assets/images/Jessica.png" class="image">
+	  <div id="overlayJessica"></div>
 	</div>
-</div>
+  </div>	
 
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
+	<div class="container">
+	  <img src="assets/images/gary.png" class="image">
+	  <div id="overlayGary"></div>
+	</div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
+	<div class="container">
+	  <img src="assets/images/nick.png" class="image">
+	  <div id="overlayNick"></div>
+	</div>
+  </div>	
+
+  <div class="mdl-cell mdl-cell--3-col bio-pic-container">	
+	<div class="container">
+	  <img src="assets/images/spencer.png" class="image">
+	  <div id="overlaySpencer"></div>
+	</div>
+  </div>
+</div>
 
 
 
@@ -216,12 +213,7 @@
       // **** .ref() refers to the path you want to save your data to
       // **** Since we left .ref() blank, it will save to the root directory
       database.ref().set({
-
-      clickCount: clickCounter,
         clickCount: clickCounter,
-        comment: "Tracks user presses of SiGo button",
-       });
-  });
 </script>
 </body>
 </html>
