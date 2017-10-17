@@ -19,14 +19,14 @@ $(document).ready(function() {
             var firstPic = $("<div>");
 
             //functions to place restaurant information in their respective div
-            restaurantsdiv1.html(data.restaurants[5].restaurant.name);
+            restaurantsdiv1.html(data.restaurants[11].restaurant.name);
             console.log(data.restaurants[5].restaurant.name)
             $("#restaurantsdiv1").html(restaurantsdiv1);
-            restaurantsdiv2.html(data.restaurants[6].restaurant.name);
+            restaurantsdiv2.html(data.restaurants[8].restaurant.name);
             $("#restaurantsdiv2").html(restaurantsdiv2);
-            restaurantsdiv3.html(data.restaurants[3].restaurant.name);
+            restaurantsdiv3.html(data.restaurants[2].restaurant.name);
             $("#restaurantsdiv3").html(restaurantsdiv3);
-            restaurantsdiv4.html(data.restaurants[10].restaurant.name);
+            restaurantsdiv4.html(data.restaurants[3].restaurant.name);
             $("#restaurantsdiv4").html(restaurantsdiv4);
 
             firstPic.html(data.restaurants[5].restaurant.featured_image);
