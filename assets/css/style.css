@@ -29,19 +29,25 @@
 }
 .main-button {
     margin: auto;
-    /* margin-left: 0px;
-  margin-top: 20px;
+   margin-top: 20px;
   width: 200px;
   height: 60px;
   font-size: 20px;*/
 }
 .title-text {
     margin-top: 25%;
+    float: right;
     color: white;
+
 }
 h1,
 h2 {
-    margin-bottom: 2px;
+    margin: 0;
+    font-size: 50px;
+}
+
+p{
+    padding-top: 15px;
 }
 .quote {
     background: url('../images/quote-image-02.png') no-repeat;
