@@ -28,7 +28,7 @@
 }
 
 .hero-image{
-    background:url('../images/hero-image-no-text-01.png') center 35% no-repeat;
+    background:url('../images/hero-image-01.png') center 35% no-repeat;
     height: 100vh;
 
 
@@ -60,7 +60,7 @@ h1{
 }
 
 .quote{
-  background:url('../images/quote-image-02-02.png') no-repeat;
+  background:url('../images/quote-image-02.png') no-repeat;
   height: 50vh;
 
 }
