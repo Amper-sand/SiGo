@@ -208,12 +208,14 @@
       // Add 1 to clickCounter
       clickCounter++;
 
-      // **** Store Click Data to Firebase in a JSON property called clickCount *****
-      // **** Note how we are using the Firebase .set() method ****
-      // **** .ref() refers to the path you want to save your data to
-      // **** Since we left .ref() blank, it will save to the root directory
+      clickCounter++;
+
+    
       database.ref().set({
         clickCount: clickCounter,
+        comment: "Tracks number of users using SiGo",
+	  });
+	 });
 </script>
 </body>
 </html>
