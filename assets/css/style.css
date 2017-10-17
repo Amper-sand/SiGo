@@ -44,7 +44,7 @@
 .main-button{
 	margin-left: 0px;
 	margin-top: 20px;
-	width: 600px;
+	width: 200px;
 	height: 60px;
 	font-size: 20px;
 }
@@ -71,7 +71,6 @@ h1{
 }
 
 #full-options-container{
-	height: 960px;
 	margin: auto;
 }
 
@@ -180,10 +179,19 @@ line-height: 30px;
 font-weight: lighter;
 }
 
-/*.bio-pic-container{
-	width: 300px;
-	height: 300px
-	margin: 0;
-	position: 
+.bio-pic-container{
+	margin: auto;
 
-}*/
+}
+
+div.container{
+  margin: 0px;
+}
+
+#team-pics .container{
+padding: 0px 30px;
+}
+
+#team-pics .container2{
+margin-left: 30px;
+}
