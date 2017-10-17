@@ -1,6 +1,6 @@
 /*div{
-	border: solid;
-	padding: 20px;
+  border: solid;
+  padding: 20px;
 }*/
 
 
@@ -18,7 +18,7 @@
 }
 
 .options{
-	margin: 30px;
+  margin: 30px;
 
 }
 
@@ -28,8 +28,8 @@
 }
 
 .hero-image{
-	  background:url('../images/hero-image-no-text-01.png') center 35% no-repeat;
-	  height: 100vh;
+    background:url('../images/hero-image-no-text-01.png') center 35% no-repeat;
+    height: 100vh;
 
 
 
@@ -37,50 +37,50 @@
 }
 
 .mdl-button {
-	margin-left: 0px;
+  margin-left: 0px;
 
 }
 
 .main-button{
-	margin-left: 0px;
-	margin-top: 20px;
-	width: 200px;
-	height: 60px;
-	font-size: 20px;
+  margin-left: 0px;
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
 }
 
 .title-text{
-	margin-top: 25%;
-	color: white;
+  margin-top: 25%;
+  color: white;
 }
 
 h1{
-	margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .quote{
-	background:url('../images/quote-image-02-02.png') no-repeat;
-	height: 50vh;
+  background:url('../images/quote-image-02-02.png') no-repeat;
+  height: 50vh;
 
 }
 
 #quote-text {
-	color: white;
-	text-align: center;
-	margin-top: 10%;
+  color: white;
+  text-align: center;
+  margin-top: 10%;
 }
 
 #full-options-container{
-	margin: auto;
+  margin: auto;
 }
 
 .bio-pics{
-	padding: 0;
-	width: 300px;
-	height: auto;
-	margin: auto;
-	margin-top: 20px;
-	position: relative;
+  padding: 0;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
 }
 
 
@@ -169,8 +169,8 @@ h1{
 }
 
 .mdl-card__supporting-text{
-	font-size: 20px;
-	line-height: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 #about-text{
@@ -180,7 +180,7 @@ font-weight: lighter;
 }
 
 .bio-pic-container{
-	margin: auto;
+  margin: auto;
 
 }
 
