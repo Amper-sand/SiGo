@@ -96,7 +96,7 @@
 
 		<!-- This is card #2 for Go -->
 		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand">
+			<div class="mdl-card__title mdl-card--expand" id="secondPic">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv2">
@@ -107,7 +107,7 @@
 
 		<!-- This is card #3 for Go -->
 		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand">
+			<div class="mdl-card__title mdl-card--expand" id="thirdPic">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv3">
@@ -118,7 +118,7 @@
 
 		<!-- This is card #4 for Go -->
 		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand">
+			<div class="mdl-card__title mdl-card--expand" id="fourthPic">
 				<h2 class="mdl-card__title-text">Go</h2>
 			</div>
 			<div class="mdl-card__supporting-text" id="restaurantsdiv4">
@@ -216,7 +216,12 @@
       // **** .ref() refers to the path you want to save your data to
       // **** Since we left .ref() blank, it will save to the root directory
       database.ref().set({
+
+      clickCount: clickCounter,
         clickCount: clickCounter,
+        comment: "Tracks user presses of SiGo button",
+       });
+  });
 </script>
 </body>
 </html>
