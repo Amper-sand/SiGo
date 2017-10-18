@@ -217,7 +217,8 @@
       // **** .ref() refers to the path you want to save your data to
       // **** Since we left .ref() blank, it will save to the root directory
       database.ref().set({
-        clickCount: clickCounter
+        clickCount: clickCounter,
+        comment: "Tracks user clicks on Sigo button",
     });
   });
 </script>
