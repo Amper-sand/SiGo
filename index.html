@@ -205,6 +205,8 @@
 
     // Initializing our click count at 0
     var clickCounter = 0;
+    var goClicks = 0;
+    var stayClicks = 0;
 
     // On Click
     $("#mainbutton").on("click", function() {
@@ -220,6 +222,8 @@
         clickCount: clickCounter,
         comment: "Tracks user clicks on Sigo button",
     });
+
+
         public void onStart() {
         super.onStart();
         FirebaseUserActions.getInstance().start(getRecipeViewAction());
