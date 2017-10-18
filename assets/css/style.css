@@ -20,9 +20,19 @@
 .options {
     margin: 30px;
 }
-.demo-card-square {} .hero-image {
+/*.demo-card-square {} .hero-image {
     background: url('../images/hero-image-01.png') center 35% no-repeat;
     height: 100vh;
+}*/
+
+.hero-image{
+     width: 100%;
+    height: auto%;
+    position: absolute;
+}
+
+.mdl-grid{
+    padding: 0;
 }
 .mdl-button {
     margin-left: 0px;
@@ -35,9 +45,11 @@
   font-size: 20px;*/
 }
 .title-text {
+
     margin-top: 25%;
-    float: right;
     color: white;
+    padding-right: 25px;
+    position: relative;
 
 }
 h1,
@@ -58,7 +70,52 @@ p{
     text-align: center;
     margin-top: 10%;
 }
+
+#intro-section.mdl-grid{
+    height: 1080px;
+    }
+
+@media screen and (max-width: 1980px) and (min-width: 1840px){
+#intro-section.mdl-grid{
+    height: 1080px;
+}
+}
+@media screen and (max-width: 1839px) and (min-width: 1640px){
+#intro-section.mdl-grid{
+    height: 1026px;
+}
+}
+
+@media screen and (max-width: 1639px) and (min-width: 1540px){
+#intro-section.mdl-grid{
+    height: 1000px;
+}
+}
+@media screen and (max-width: 1539px) and (min-width: 1440px){
+#intro-section.mdl-grid{
+    height: 980px;
+}
+}
+@media screen and (max-width: 1439px) and (min-width: 1240px){
+#intro-section.mdl-grid{
+    height: 780px;
+}
+}
+
+@media screen and (max-width: 1239px) and (min-width: 1040px){
+#intro-section.mdl-grid{
+    height: 700px;
+}
+}
+@media screen and (max-width: 1039px) and (min-width: 960px){
+#intro-section.mdl-grid{
+    height: 680px;
+}
+}
+
+
 #full-options-container {
+    position: relative;
     margin: auto;
 }
 .bio-pics {
@@ -79,6 +136,8 @@ p{
     width: 300px;
     height: auto;
 }
+
+
 /*Jessica Bio */
 
 #overlayJessica {
@@ -91,7 +150,7 @@ p{
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background: url('../images/jessica2pic.png') no-repeat;
+    background: url('../images/jessica-seagull.png') no-repeat;
 }
 .container:hover #overlayJessica {
     opacity: 1;
@@ -108,7 +167,7 @@ p{
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background: url('../images/gary2.png') no-repeat;
+    background: url('../images/gary-seagull.png') no-repeat;
 }
 .container:hover #overlayGary {
     opacity: 1;
@@ -126,7 +185,7 @@ p{
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background: url('../images/nick2.png') no-repeat;
+    background: url('../images/nick-seagull.png') no-repeat;
 }
 .container:hover #overlayNick {
     opacity: 1;
@@ -143,7 +202,7 @@ p{
     width: 300px;
     opacity: 0;
     transition: .5s ease;
-    background: url('../images/spencer2.png') no-repeat;
+    background: url('../images/spencer-seagull.png') no-repeat;
 }
 .container:hover #overlaySpencer {
     opacity: 1;
