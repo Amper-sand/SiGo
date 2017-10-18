@@ -220,6 +220,15 @@
         clickCount: clickCounter,
         comment: "Tracks user clicks on Sigo button",
     });
+        public void onStart() {
+        super.onStart();
+        FirebaseUserActions.getInstance().start(getRecipeViewAction());
+	 }
+		public void onStop() {
+        FirebaseUserActions.getInstance().end(getRecipeViewAction());
+        super.onStop();
+    }
+
   });
 </script>
 </body>
