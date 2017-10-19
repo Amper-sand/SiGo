@@ -1,268 +1,268 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Sigo</title>
-	<!-- Links and scripts for Material Design Lite -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-red.min.css" /> 
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script
-	  src="https://code.jquery.com/jquery-3.2.1.js"
-	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-	  crossorigin="anonymous"></script>
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-<!-- test -->
+    <meta charset="UTF-8">
+    <title>Sigo</title>
+    <!-- Links and scripts for Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-red.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- test -->
 
 </head>
+
 <body>
 
-<div class="mdl-grid">
-	<img class="hero-image" src="assets/images/hero-image-01.png">
+    <div class="mdl-grid">
+        <img class="hero-image" src="assets/images/hero-image-01.png">
 
+        <div class="mdl-grid" id="intro-section">
+            <div class="mdl-cell mdl-cell--7-col" id="empty-div">
+                <!-- keep this empty -->
+            </div>
+            <div class="mdl-cell mdl-cell--5-col title-text" id="intro-body-text">
+                <h1 class="animated fadeInLeft">HAVE FOMO?</h1>
+                <h2 class="animated fadeInRight">TRY SiGo</h2>
+                <p id="about-text">A service app that provides entertainment options for staying in or going out. Sigo reduces the anxiety of how to spend time at home and lessen the ever scary FOMO (Fear of Missing Out). Additionally, the service provides a centralized hub for planning an evening for yourself or a group.</p>
+                    <br>
+                    <!-- Accent-colored raised button with ripple -->
+                    <input type="button" class="mdl-button main-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="mainbutton" value="GO OR STAY" onclick="scroll_to_div('full-options-container')">
+            </div>
+        </div>
+    </div>
 
-	<div class="mdl-grid" id="intro-section">
-	  <div class="mdl-cell mdl-cell--7-col" id="empty-div">
-		<!-- keep this empty -->
-	  </div>
-	  <div class="mdl-cell mdl-cell--5-col title-text" id="intro-body-text">
-	  	<h1 class="animated fadeInLeft">HAVE FOMO?</h1>
-	  	<h2 class="animated fadeInRight">TRY SiGo</h2>
-	  	<p id="about-text">A service app that provides entertainment options for staying in or going out. Sigo reduces the anxiety of how to spend time at home and lessen the ever scary FOMO (Fear of Missing Out). Additionally, the service provides a centralized hub for planning an evening for yourself or a group.<br>
-	  	<!-- Accent-colored raised button with ripple -->
-		<input type="button" class="mdl-button main-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="mainbutton" value="GO OR STAY" onclick="scroll_to_div('full-options-container')"> 
-	  </div>
-	</div>
-</div>	
+    <!-- This is the grid for the card options to stay or go  -->
+    <div id="full-options-container">
+        <div class="mdl-grid options">
+            <!-- This is card #1 for Stay -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Stay</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="img1">
+                </div>
+                <div class="mdl-card__supporting-text" id="recipediv1">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link1" target="_blank">STAY IN // Full Recipe</a>
+                </div>
+            </div>
 
+            <!-- This is card #2 for Stay -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Stay</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="img2">
+                </div>
+                <div class="mdl-card__supporting-text" id="recipediv2">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link2" target="_blank">STAY IN // Full Recipe</a>
+                </div>
+            </div>
 
-<!-- This is the grid for the card options to stay or go  -->
-<div id="full-options-container">
-	<div class="mdl-grid options">
-		<!-- This is card #1 for Stay -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+            <!-- This is card #3 for Stay -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Stay</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="img3">
+                </div>
+                <div class="mdl-card__supporting-text" id="recipediv3">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link3" target="_blank">STAY IN // Full Recipe</a>
+                </div>
+            </div>
 
-			<div class="mdl-card__title mdl-card--expand" id="img1" >
-				<h2 class="mdl-card__title-text">Stay</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="recipediv1">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link1" target="_blank" >STAY IN // Full Recipe</a>
-			</div>
-		</div>
+            <!-- This is card #4 for Stay -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Stay</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="img4">
+                </div>
+                <div class="mdl-card__supporting-text" id="recipediv4">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link4" target="_blank">STAY IN // Full Recipe</a>
+                </div>
+            </div>
+        </div>
 
-		<!-- This is card #2 for Stay -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="img2" >
-				<h2 class="mdl-card__title-text">Stay</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="recipediv2">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link2" target="_blank" >STAY IN // Full Recipe</a>
-			</div>
-		</div>
+        <div class="mdl-grid options">
+            <!-- This is card #1 for Go -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Go</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="firstPic">
+                </div>
+                <div class="mdl-card__supporting-text" id="restaurantsdiv1">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">GO OUT // Check the details</a>
+                </div>
+            </div>
 
-		<!-- This is card #3 for Stay -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="img3" >
-				<h2 class="mdl-card__title-text">Stay</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="recipediv3">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link3" target="_blank" >STAY IN // Full Recipe</a>
-			</div>
-		</div>
+            <!-- This is card #2 for Go -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Go</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="secondPic">
+                </div>
+                <div class="mdl-card__supporting-text" id="restaurantsdiv2">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink2" target="_blank">GO OUT // Check the details</a>
+                </div>
+            </div>
 
-		<!-- This is card #4 for Stay -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="img4">
-				<h2 class="mdl-card__title-text">Stay</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="recipediv4">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href='#' id="link4" target="_blank" >STAY IN // Full Recipe</a>
-			</div>
-		</div>
-	</div>
+            <!-- This is card #3 for Go -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Go</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="thirdPic">
+                </div>
+                <div class="mdl-card__supporting-text" id="restaurantsdiv3">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink3" target="_blank">GO OUT // Check the details</a>
+                </div>
+            </div>
 
-	<div class="mdl-grid options">
-		<!-- This is card #1 for Go -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="firstPic">
-				<h2 class="mdl-card__title-text">Go</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="restaurantsdiv1">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">GO OUT // Check the details</a>
-			</div>
-		</div>
+            <!-- This is card #4 for Go -->
+            <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__actions mdl-card--border">
+                    <h2 class="mdl-card__title-text">Go</h2>
+                </div>
+                <div class="mdl-card__title mdl-card--expand" id="fourthPic">
+                </div>
+                <div class="mdl-card__supporting-text" id="restaurantsdiv4">
+                </div>
+                <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink4" target="_blank">GO OUT // Check the details</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- This is card #2 for Go -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="secondPic">
-				<h2 class="mdl-card__title-text">Go</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="restaurantsdiv2">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink2" target="_blank">GO OUT // Check the details</a>
-			</div>
-		</div>
+    <!-- This is the separating quote -->
+    <div class="mdl-grid quote">
+        <div class="mdl-cell mdl-cell--12-col">
+        </div>
+    </div>
 
-		<!-- This is card #3 for Go -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="thirdPic">
-				<h2 class="mdl-card__title-text">Go</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="restaurantsdiv3">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink3" target="_blank" >GO OUT // Check the details</a>
-			</div>
-		</div>
+    <!-- This is for our Team pic -->
+    <div class="mdl-grid options">
+        <!-- Jessica -->
+        <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
+            <div class="mdl-card--expand container">
+                <img src="assets/images/Jessica.png" class="image">
+                <div id="overlayJessica"></div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Jessica Toro-Pacheco</a>
+            </div>
+        </div>
 
-		<!-- This is card #4 for Go -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
-			<div class="mdl-card__title mdl-card--expand" id="fourthPic">
-				<h2 class="mdl-card__title-text">Go</h2>
-			</div>
-			<div class="mdl-card__supporting-text" id="restaurantsdiv4">
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink4" target="_blank">GO OUT // Check the details</a>
-			</div>
-		</div>
-	</div>
-</div>
+        <!-- Gary -->
+        <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
+            <div class="mdl-card--expand container">
+                <img src="assets/images/gary.png" class="image">
+                <div id="overlayGary"></div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Gary Marroquin</a>
+            </div>
+        </div>
 
-<!-- This is the separating quote -->
-<div class="mdl-grid quote">
-  <div class="mdl-cell mdl-cell--12-col">
-  </div>
-</div>
+        <!-- Nick -->
+        <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
+            <div class="mdl-card--expand container">
+                <img src="assets/images/nick.png" class="image">
+                <div id="overlayNick"></div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Nick Dehmlow</a>
+            </div>
+        </div>
 
+        <!-- Spencer -->
+        <div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
+            <div class="mdl-card--expand container">
+                <img src="assets/images/spencer.png" class="image">
+                <div id="overlaySpencer"></div>
+            </div>
+            <div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Spencer Hawk</a>
+            </div>
+        </div>
+    </div>
 
-<!-- This is for our Team pic -->
-<div class="mdl-grid options">
-		<!-- Jessica -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
-			<div class="mdl-card--expand container">
-				<img src="assets/images/Jessica.png" class="image">
-	  			<div id="overlayJessica"></div>
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Jessica Toro-Pacheco</a>
-			</div>
-		</div>
+    <script type="text/javascript" src="assets/script/goingout.js"></script>
 
-		<!-- Gary -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
-			<div class="mdl-card--expand container">
-				<img src="assets/images/gary.png" class="image">
-	  			<div id="overlayGary"></div>
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Gary Marroquin</a>
-			</div>
-		</div>
+    <script type="text/javascript">
+        function scroll_to_div(div_id) {
+            $('html,body').animate({
+                    scrollTop: $("#" + div_id).offset().top
+                },
+                'slow');
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDjYHIcDW1WuJsNlci3rtMPodfy0EO8oDI",
+            authDomain: "sigo-b2a76.firebaseapp.com",
+            databaseURL: "https://sigo-b2a76.firebaseio.com",
+            projectId: "sigo-b2a76",
+            storageBucket: "sigo-b2a76.appspot.com",
+            messagingSenderId: "766244080713"
+        };
+        firebase.initializeApp(config);
 
-		<!-- Nick -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
-			<div class="mdl-card--expand container">
-				 <img src="assets/images/nick.png" class="image">
-	  			 <div id="overlayNick"></div>
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Nick Dehmlow</a>
-			</div>
-		</div>
+        var database = firebase.database();
+        var clickCounters;
 
-		<!-- Spencer -->
-		<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp ">
-			<div class="mdl-card--expand container">
-				 <img src="assets/images/spencer.png" class="image">
-	  			 <div id="overlaySpencer"></div>
-			</div>
-			<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#" id="golink1" target="_blank">Spencer Hawk</a>
-			</div>
-		</div>
-	</div>
+        database.ref().on("value", function(snapshot) {
+            clickCounters = snapshot.val();
+            console.log(clickCounters)
+            if (!clickCounters.clickCounter) {
+                clickCounters.clickCounter = 0
+            }
+            if (!clickCounters.goClicks) {
+                clickCounters.goClicks = 0
+            }
+            if (!clickCounters.stayClicks) {
+                clickCounters.stayClicks = 0
+            }
+        })
 
+        // Initializing our click count at 0
 
+        // On Click
+        $("#mainbutton").on("click", function() {
 
+            // Add 1 to clickCounter
 
+            // **** Store Click Data to Firebase in a JSON property called clickCount *****
+            // **** Note how we are using the Firebase .set() method ****
+            // **** .ref() refers to the path you want to save your data to
+            // **** Since we left .ref() blank, it will save to the root directory
+            clickCounters.clickCounter++;
 
+            database.ref().set(clickCounters);
+        });
 
-<script type="text/javascript" src="assets/script/goingout.js"></script>
-
-<script type="text/javascript">
-	function scroll_to_div(div_id)
-	{
-	 $('html,body').animate(
-	 {
-	  scrollTop: $("#"+div_id).offset().top
-	 },
-	 'slow');
-	}
-</script>
-<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDjYHIcDW1WuJsNlci3rtMPodfy0EO8oDI",
-    authDomain: "sigo-b2a76.firebaseapp.com",
-    databaseURL: "https://sigo-b2a76.firebaseio.com",
-    projectId: "sigo-b2a76",
-    storageBucket: "sigo-b2a76.appspot.com",
-    messagingSenderId: "766244080713"
-  };
-  firebase.initializeApp(config);
-
-   var database = firebase.database();
-   var clickCounters;
-
-   database.ref().on("value", function(snapshot){
-   		clickCounters = snapshot.val();
-   		console.log(clickCounters)
-   		if (!clickCounters.clickCounter) {
-   			clickCounters.clickCounter = 0
-   		}
-   		if (!clickCounters.goClicks) {
-   			clickCounters.goClicks = 0
-   		}
-   		if (!clickCounters.stayClicks) {
-   			clickCounters.stayClicks = 0
-   		}
-   })
-
-
-    // Initializing our click count at 0
-   
-
-    // On Click
-    $("#mainbutton").on("click", function() {
-
-      // Add 1 to clickCounter
-      
-
-      // **** Store Click Data to Firebase in a JSON property called clickCount *****
-      // **** Note how we are using the Firebase .set() method ****
-      // **** .ref() refers to the path you want to save your data to
-      // **** Since we left .ref() blank, it will save to the root directory
-      clickCounters.clickCounter++;
-
-      database.ref().set(clickCounters);
-      }); 
-        
-    
-    //tracks go link user clicks
-    $("#golink1, #golink2, #golink3, #golink4").on("click", function() {
-    		clickCounters.goClicks++;
-    		database.ref().set(clickCounters);
-    		}); 
-    //tracks stay link user clicks
-    $("#link1, #link2, #link3, #link4").on("click", function() {
-    		clickCounters.stayClicks++;
-    		database.ref().set(clickCounters);
-    		}); 
-    	
-
-</script>
+        //tracks go link user clicks
+        $("#golink1, #golink2, #golink3, #golink4").on("click", function() {
+            clickCounters.goClicks++;
+            database.ref().set(clickCounters);
+        });
+        //tracks stay link user clicks
+        $("#link1, #link2, #link3, #link4").on("click", function() {
+            clickCounters.stayClicks++;
+            database.ref().set(clickCounters);
+        });
+    </script>
 </body>
+
 </html>

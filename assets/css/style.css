@@ -1,123 +1,78 @@
-/*div{
-  border: solid;
-  padding: 20px;
-}*/
-
+body {
+    background-color: rgb(1, 50, 67);
+}
 .demo-card-square.mdl-card {
     width: 300px;
-    height: 340px;
+    height: 380px;
     margin: 20px auto;
 }
 
-#img1{
-	padding-top: 10px;
+#img1 {
+    padding-top: 10px;
 }
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); center / cover;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
+
 .options {
     margin: 30px;
 }
-/*.demo-card-square {} .hero-image {
-    background: url('../images/hero-image-01.png') center 35% no-repeat;
-    height: 100vh;
-}*/
 
-.hero-image{
-     width: 100%;
+.hero-image {
+    width: 100%;
     height: auto%;
     position: absolute;
 }
 
-.mdl-grid{
+.mdl-grid {
     padding: 0;
 }
+
 .mdl-button {
     margin-left: 0px;
 }
+
 .main-button {
     margin: auto;
-   margin-top: 20px;
-  width: 200px;
-  height: 60px;
-  font-size: 20px;*/
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
 }
-.title-text {
 
+.title-text {
     margin-top: 25%;
     color: white;
     padding-right: 25px;
     position: relative;
-
-}
-h1,
-h2 {
-    margin: 0;
-    font-size: 50px;
 }
 
-p{
+p {
     padding-top: 15px;
 }
+
+.mdl-card__title-text {
+    color: rgb(103, 128, 159);
+}
+
 .quote {
     background: url('../images/quote-image-02.png') no-repeat;
     height: 50vh;
 }
+
 #quote-text {
     color: white;
     text-align: center;
     margin-top: 10%;
 }
 
-#intro-section.mdl-grid{
-    height: 1080px;
-    }
-
-@media screen and (max-width: 1980px) and (min-width: 1840px){
-#intro-section.mdl-grid{
-    height: 1080px;
-}
-}
-@media screen and (max-width: 1839px) and (min-width: 1640px){
-#intro-section.mdl-grid{
-    height: 1026px;
-}
-}
-
-@media screen and (max-width: 1639px) and (min-width: 1540px){
-#intro-section.mdl-grid{
-    height: 1000px;
-}
-}
-@media screen and (max-width: 1539px) and (min-width: 1440px){
-#intro-section.mdl-grid{
-    height: 980px;
-}
-}
-@media screen and (max-width: 1439px) and (min-width: 1240px){
-#intro-section.mdl-grid{
-    height: 780px;
-}
-}
-
-@media screen and (max-width: 1239px) and (min-width: 1040px){
-#intro-section.mdl-grid{
-    height: 700px;
-}
-}
-@media screen and (max-width: 1039px) and (min-width: 960px){
-#intro-section.mdl-grid{
-    height: 680px;
-}
-}
-
-
 #full-options-container {
     position: relative;
     margin: auto;
 }
+
 .bio-pics {
     padding: 0;
     width: 300px;
@@ -126,20 +81,20 @@ p{
     margin-top: 20px;
     position: relative;
 }
+
 .container {
     position: relative;
     width: 300px;
     height: auto;
 }
+
 .image {
     display: block;
     width: 300px;
     height: auto;
 }
 
-
 /*Jessica Bio */
-
 #overlayJessica {
     position: absolute;
     top: 0;
@@ -155,8 +110,8 @@ p{
 .container:hover #overlayJessica {
     opacity: 1;
 }
-/*Gary Bio*/
 
+/*Gary Bio*/
 #overlayGary {
     position: absolute;
     top: 0;
@@ -190,8 +145,8 @@ p{
 .container:hover #overlayNick {
     opacity: 1;
 }
-/*Spencer Bio*/
 
+/*Spencer Bio*/
 #overlaySpencer {
     position: absolute;
     top: 0;
@@ -204,45 +159,87 @@ p{
     transition: .5s ease;
     background: url('../images/spencer-seagull.png') no-repeat;
 }
+
 .container:hover #overlaySpencer {
     opacity: 1;
     background-position: top;
 }
+
 .mdl-card__supporting-text {
     font-size: 20px;
     line-height: 24px;
 }
+
 #about-text {
     font-size: 18px;
     line-height: 30px;
     font-weight: lighter;
 }
+
 .bio-pic-container {
     margin: auto;
 }
+
 div.container {
     margin: 0px;
 }
+
 #team-pics .container {
     padding: 0px 30px;
 }
+
 #team-pics .container2 {
     margin-left: 30px;
 }
 
-<style>
-.demo-card-image.mdl-card {
-  width: 300px;
-  height: 300px;
-}
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+<style> .demo-card-image.mdl-card {
+    width: 300px;
+    height: 300px;
 }
 
+.demo-card-image > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1980px) and (min-width: 1840px) {
+    #intro-section.mdl-grid {
+        height: 1080px;
+    }
+}
+@media screen and (max-width: 1839px) and (min-width: 1640px) {
+    #intro-section.mdl-grid {
+        height: 1026px;
+    }
+}
+@media screen and (max-width: 1639px) and (min-width: 1540px) {
+    #intro-section.mdl-grid {
+        height: 1000px;
+    }
+}
+@media screen and (max-width: 1539px) and (min-width: 1440px) {
+    #intro-section.mdl-grid {
+        height: 980px;
+    }
+}
+@media screen and (max-width: 1439px) and (min-width: 1240px) {
+    #intro-section.mdl-grid {
+        height: 780px;
+    }
+}
+@media screen and (max-width: 1239px) and (min-width: 1040px) {
+    #intro-section.mdl-grid {
+        height: 700px;
+    }
+}
+@media screen and (max-width: 1039px) and (min-width: 960px) {
+    #intro-section.mdl-grid {
+        height: 680px;
+    }
+}
