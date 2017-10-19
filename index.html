@@ -202,44 +202,53 @@
   firebase.initializeApp(config);
 
    var database = firebase.database();
+   var clickCounters;
+
+   database.ref().on("value", function(snapshot){
+   		clickCounters = snapshot.val();
+   		console.log(clickCounters)
+   		if (!clickCounters.clickCounter) {
+   			clickCounters.clickCounter = 0
+   		}
+   		if (!clickCounters.goClicks) {
+   			clickCounters.goClicks = 0
+   		}
+   		if (!clickCounters.stayClicks) {
+   			clickCounters.stayClicks = 0
+   		}
+   })
+
 
     // Initializing our click count at 0
-    var clickCounter = 0;
-    var goClicks = 0;
-    var stayClicks = 0;
+   
 
     // On Click
     $("#mainbutton").on("click", function() {
 
       // Add 1 to clickCounter
-      clickCounter++;
+      
 
       // **** Store Click Data to Firebase in a JSON property called clickCount *****
       // **** Note how we are using the Firebase .set() method ****
       // **** .ref() refers to the path you want to save your data to
       // **** Since we left .ref() blank, it will save to the root directory
-      database.ref().set({
-        clickCount: clickCounter,
-        comment: "Tracks user clicks on Sigo button",
-    		});
-    	});
+      clickCounters.clickCounter++;
+
+      database.ref().set(clickCounters);
+      }); 
+        
     
     //tracks go link user clicks
     $("#golink1, #golink2, #golink3, #golink4").on("click", function() {
-    		goClicks++;
-    		database.ref().set({
-    			goClick: goClicks,
-    			comment: "Tracks user clicks on going out links",
-    		});
-    	});
+    		clickCounters.goClicks++;
+    		database.ref().set(clickCounters);
+    		}); 
     //tracks stay link user clicks
     $("#link1, #link2, #link3, #link4").on("click", function() {
-    		stayClicks++;
-    		database.ref().set({
-    			stayClick: stayClicks,
-    			comment: "Tracks user clicks on staying in links",
-    		});
-    	});
+    		clickCounters.stayClicks++;
+    		database.ref().set(clickCounters);
+    		}); 
+    	
 
 </script>
 </body>
