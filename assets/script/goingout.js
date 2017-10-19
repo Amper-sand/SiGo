@@ -104,3 +104,7 @@ function displayImages(recipes){
  }
 
 });
+
+
+
+
