@@ -16,7 +16,30 @@ $(document).ready(function() {
             var restaurantsdiv3 = $("<div>");
             var restaurantsdiv4 = $("<div>");
 
-            var firstPic = $("<div>");
+            var restaurantList = [
+            	"Lou Malnati's Pizzeria",
+            	"Portillo's",
+            	"Girl & the Goat",
+            	"Grand Lux Cafe",
+            	"Gibsons Bar & Steakhouse",
+            	"The Gage",
+            	"The Purple Pig",
+            	"Shaw's Crab House",
+            	"Frontera Grill",
+            	"Cafe Iberico",
+            	"Yolk",
+            	"Café Ba-Ba-Reeba",
+            	"Alinea",
+            	"Xoco",
+            	"The Publican",
+            	"Kuma's Corner",
+            	"Giordano's",
+            	"Gino's East",
+            	"Lou Malnati's Pizzeria",
+            	"Smoque BBQ"
+            ]
+
+            	
 
             //functions to place restaurant information in their respective div
             restaurantsdiv1.html(data.restaurants[5].restaurant.name);
@@ -29,8 +52,8 @@ $(document).ready(function() {
             restaurantsdiv4.html(data.restaurants[10].restaurant.name);
             $("#restaurantsdiv4").html(restaurantsdiv4);
 
-            firstPic.html(data.restaurants[5].restaurant.featured_image);
-            console.log(data.restaurants[5].restaurant.featured_image)
+            // firstPic.html(data.restaurants[5].restaurant.featured_image);
+            // console.log(data.restaurants[5].restaurant.featured_image)
             $("#firstPic").html("<img src='" + data.restaurants[5].restaurant.featured_image + "' alt='restaurantimage' style='height:220px; width:370px'>");
             $("#secondPic").html("<img src='" + data.restaurants[6].restaurant.featured_image + "' alt='restaurantimage' style='height:220px; width:370px'>");
             $("#thirdPic").html("<img src='" + data.restaurants[3].restaurant.featured_image + "' alt='restaurantimage' style='height:220px; width:370px'>");
