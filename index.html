@@ -221,19 +221,26 @@
       database.ref().set({
         clickCount: clickCounter,
         comment: "Tracks user clicks on Sigo button",
-    });
+    		});
+    	});
+    
+    //tracks go link user clicks
+    $("#golink1, #golink2, #golink3, #golink4").on("click", function() {
+    		goClicks++;
+    		database.ref().set({
+    			goClick: goClicks,
+    			comment: "Tracks user clicks on going out links",
+    		});
+    	});
+    //tracks stay link user clicks
+    $("#link1, #link2, #link3, #link4").on("click", function() {
+    		stayClicks++;
+    		database.ref().set({
+    			stayClick: stayClicks,
+    			comment: "Tracks user clicks on staying in links",
+    		});
+    	});
 
-
-        public void onStart() {
-        super.onStart();
-        FirebaseUserActions.getInstance().start(getRecipeViewAction());
-	 }
-		public void onStop() {
-        FirebaseUserActions.getInstance().end(getRecipeViewAction());
-        super.onStop();
-    }
-
-  });
 </script>
 </body>
 </html>
