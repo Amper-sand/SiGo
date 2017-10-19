@@ -4,7 +4,7 @@
 }*/
 
 .demo-card-square.mdl-card {
-    width: 320px;
+    width: 300px;
     height: 340px;
     margin: 20px auto;
 }
@@ -15,7 +15,7 @@
 
 .demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('../images/test-image.jpg') center / cover;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); center / cover;
 }
 .options {
     margin: 30px;
@@ -230,4 +230,19 @@ div.container {
     margin-left: 30px;
 }
 
+<style>
+.demo-card-image.mdl-card {
+  width: 300px;
+  height: 300px;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
 
