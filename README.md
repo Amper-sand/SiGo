@@ -1,6 +1,6 @@
 # SiGo - Stay In or Go Out?
 
-![Alt Text](assets/images/previewimage.png)
+![Alt Text](previewimage.png)
 
 
 ### Synopsis
@@ -77,7 +77,7 @@ https://spoonacular.com/food-api
 * Material Design Lite
 * Animate.css
 
-![Alt Text](assets/images/mdimage.png)
+![Alt Text](mdimage.png)
 
 ### Authors
 
